@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  front:
+    build: ./
+    container_name: react
+    volumes:
+      - ./dev:/work
+    ports:
+      - 3001:3000
+    tty: true
